@@ -1,0 +1,40 @@
+italizeIO() {
+        let italizeHeader = (header) => {
+          let flickerPos = -1, tmpStr;
+
+          for (let j = 0; j < header.length; j++){
+            for (let i = 0; i < header[j].length; i++){
+              if (header[j][i].toLowerCase() == 'i' || header[j][i].toLowerCase() == 'o'){
+                // with 20% chance, make current character flicker
+                if (Math.random() < 0.1 && flickerPos == -1)
+                  flickerPos = [j, i];
+                // make the character italic
+                tmpStr = `${header[j].substring(0, i)}<span class="italic">${header[j].substring(i, i+1)}</span>${header[j].substring(i+1)}`;
+                i += tmpStr.length - header[j].length;
+                header[j] = tmpStr;
+              }
+            }
+          }
+
+          return flickerPos;
+        };
+
+        let flicker = (pos, header) => {
+          if (pos != -1) {
+            let italic = header[pos[0]],
+                notItalic = `${italic.substring(0, pos[1])}${italic.substring(pos[1]+'<span class="italic">'.length, pos[1]+'<span class="italic">'.length+1)}${italic.substring(pos[1]+'<span class="italic">'.length+1+'</span>'.length)}`;
+            setInterval(() => {
+              if (header[pos[0]] == italic){
+                header[pos[0]] = notItalic;
+                header.push('');
+              } else {
+                header[pos[0]] = italic;
+                header.pop('');
+              }
+            }, 1000);
+          }
+        };
+
+        flicker(italizeHeader(this.header1), this.header1);
+        flicker(italizeHeader(this.header2), this.header2);
+      }
