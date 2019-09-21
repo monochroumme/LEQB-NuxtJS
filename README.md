@@ -1,5 +1,5 @@
 # LE-QB main page demo
-
+ 
 Created from scratch on NuxtJS.
 
 Link: http://rarenex.github.io/LEQB-NuxtJS
