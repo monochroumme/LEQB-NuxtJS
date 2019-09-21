@@ -311,7 +311,7 @@
     justify-content: center;
   }
 
-  #main-footer__left, #main-footer__right {
+  .main-footer__left, .main-footer__right {
     width: 100%;
     display: flex;
     justify-content: center;
