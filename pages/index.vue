@@ -305,6 +305,7 @@
   }
 
   #main-footer {
+    flex-direction: column;
     justify-content: center;
   }
 }
