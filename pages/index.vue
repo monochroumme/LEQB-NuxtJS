@@ -155,6 +155,7 @@
   transform: translate(0, -50%);
   top: 50%;
   width: 50%;
+  z-index: -1;
 }
 
 #main-h1, #main-h2 {
