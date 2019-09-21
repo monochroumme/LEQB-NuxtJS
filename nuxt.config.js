@@ -15,8 +15,8 @@ module.exports = {
     ]
   },
   router: {
-    // base: '/LEQB-NuxtJS/'
-    base: '/'
+    base: '/LEQB-NuxtJS/'
+    // base: '/'
   },
   /*
   ** Customize the progress-bar color
