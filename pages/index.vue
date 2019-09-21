@@ -154,9 +154,9 @@
 
 #main-cube {
   position: absolute;
-  margin-top: 15%;
-  margin-left: 13%;
-  top: 0;
+  transform: translate(0, -50%);
+  top: 50%;
+  width: 50%;
 }
 
 #main-h1, #main-h2 {

@@ -54,3 +54,10 @@
 		}
 	};
 </script>
+
+<style scoped>
+#cube {
+	display: flex;
+	justify-content: center;
+}
+</style>
