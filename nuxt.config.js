@@ -1,6 +1,5 @@
-
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -14,6 +13,9 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
+  },
+  router: {
+    base: '/LEQB-NuxtJS/'
   },
   /*
   ** Customize the progress-bar color

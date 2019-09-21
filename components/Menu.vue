@@ -97,7 +97,7 @@
 	}
 
 	.menu__item:hover {
-		background-image: url('/menuBg.gif');
+		background-image: url('~static/menuBg.gif');
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
@@ -122,7 +122,7 @@
 
 	.menu__item:hover .menu__item-title {
 		color: red;
-	    background: url('/menuBg.gif') !important;
+	    background: url('~static/menuBg.gif') !important;
 	    background-clip: text !important;
 	    -webkit-background-clip: text !important;
 	    -webkit-text-fill-color: transparent !important;

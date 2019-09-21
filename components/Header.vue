@@ -2,7 +2,7 @@
 	<div class="header">
 		<transition name="fade">
 			<a href="/" v-show="showLogo">
-				<img alt="Logo" src="/logo.png" >
+				<img alt="Logo" src="~/static/logo.png" >
 			</a>
 		</transition>
 		<transition name="fade">

@@ -40,7 +40,7 @@
 
 				const geometry = new THREE.BoxBufferGeometry(boxSize, boxSize, boxSize);
 				let envMap = new THREE.CubeTextureLoader()
-										.setPath('/')
+										.setPath('~/static/')
 										.load(['clouds.jpg', 'clouds.jpg', 'clouds.jpg', 'clouds.jpg', 'clouds.jpg', 'clouds.jpg']);
 				const material = new THREE.MeshBasicMaterial({envMap});
 				material.envMap.mapping = THREE.CubeRefractionMapping;
