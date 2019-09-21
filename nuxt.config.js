@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -15,12 +15,13 @@ module.exports = {
     ]
   },
   router: {
-    base: '/LEQB-NuxtJS/'
+    // base: '/LEQB-NuxtJS/'
+    base: '/'
   },
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#f1f1f1' },
   /*
   ** Global CSS
   */

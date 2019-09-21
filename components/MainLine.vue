@@ -69,8 +69,8 @@
 <style scoped>
 #main-line-svg {
     position: absolute;
-    width: 100%;
     height: 100%;
+    margin: 0 auto;
     top: 0;
     overflow: visible;
 }

@@ -146,4 +146,10 @@
 	    transform: translateY(0);
 	  }
 	}
+
+	@media (max-width: 1150px) {
+		#menu {
+			display: none;
+		}
+	}
 </style>

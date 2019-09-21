@@ -22,17 +22,9 @@
 
 		methods: {
 			init() {
-				let frustumSize,
-					boxSize,
+				let frustumSize = 1000,
+					boxSize = 400,
 					aspect = 1;
-
-				if (window.innerWidth >= 1600) {
-					frustumSize = 1000;
-					boxSize = 400;
-				} else {
-					frustumSize = 400;
-					boxSize = 200;
-				}
 
 				this.camera = new THREE.OrthographicCamera(frustumSize * aspect / - 2, frustumSize * aspect / 2, frustumSize / 2, frustumSize / - 2, 1, 1000);
 				this.camera.position.z = 500;
@@ -62,10 +54,3 @@
 		}
 	};
 </script>
-
-<style scoped>
-#cube {
-	width: 100%;
-	height: 100%;
-}
-</style>
