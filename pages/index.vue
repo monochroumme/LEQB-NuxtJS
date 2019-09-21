@@ -272,7 +272,6 @@
   }
 
   #main-h2 {
-    position: unset;
     font-size: 40px;
   }
 
@@ -285,6 +284,7 @@
   }
 
   #main-cube {
+    margin: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
