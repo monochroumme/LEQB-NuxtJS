@@ -265,6 +265,10 @@
     height: auto;
   }
 
+  #page-content {
+    right: 0;
+  }
+
   #main-h1 {
     position: unset;
     font-size: 18px;
