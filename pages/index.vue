@@ -10,7 +10,6 @@
       <transition name="fade">
         <div id="main-h1" v-show="showHeaders">
           <template v-for="(text, index) in header1">
-            <br v-if="index != 0">
             <span v-html="text"></span>
           </template>
         </div>
@@ -23,7 +22,6 @@
       <transition name="fade">
         <div id="main-h2" v-show="showHeaders">
           <template v-for="(text, index) in header2">
-            <br v-if="index != 0">
             <span v-html="text"></span>
           </template>
         </div>
@@ -160,6 +158,8 @@
 }
 
 #main-h1, #main-h2 {
+  display: flex;
+  flex-direction: column;
   font-family: 'Biotif-Light';
 }
 
@@ -264,6 +264,7 @@
   }
 
   #main {
+    height: initial;
     padding: 25px 0;
   }
 
@@ -271,8 +272,11 @@
     right: 0 !important;
   }
 
+  #main-h1, #main-h2 {
+    position: initial;
+  }
+
   #main-h1 {
-    position: unset;
     font-size: 18px;
     margin-top: 60px;
   }
