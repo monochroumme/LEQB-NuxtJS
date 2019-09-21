@@ -1,7 +1,7 @@
 <template>
 	<div class="header">
 		<transition name="fade">
-			<a href="/" v-show="showLogo">
+			<a href="#" v-show="showLogo">
 				<img alt="Logo" src="~/static/logo.png" >
 			</a>
 		</transition>
