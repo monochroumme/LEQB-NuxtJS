@@ -295,9 +295,9 @@
 
   #main-cube {
     margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: initial;
+    transform: none;
+    width: 100%;
   }
 
   #main-line {
