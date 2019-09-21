@@ -188,8 +188,6 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 5%;
-  height: 24px;
-  flex-wrap: wrap;
 }
 
 #main-footer a {
@@ -265,8 +263,12 @@
     height: auto;
   }
 
+  #main {
+    padding: 25px 0;
+  }
+
   #page-content {
-    right: 0;
+    right: 0 !important;
   }
 
   #main-h1 {
@@ -306,6 +308,12 @@
 
   #main-footer {
     flex-direction: column;
+    justify-content: center;
+  }
+
+  #main-footer__left, #main-footer__right {
+    width: 100%;
+    display: flex;
     justify-content: center;
   }
 }

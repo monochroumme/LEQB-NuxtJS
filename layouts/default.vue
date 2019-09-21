@@ -11,6 +11,10 @@
   import Menu from '~/components/Menu';
   
   export default {
+    components: {
+      Menu
+    },
+    
     data() {
       return {
         right: 0,
@@ -19,18 +23,23 @@
     },
 
     mounted() {
-      let menuItems = document.getElementsByClassName('menu__item');
-      let right = 0;
-
-      for (let i = 0; i < menuItems.length; i++) {
-        right += menuItems[i].offsetWidth;
-      }
-
-      this.right = right + "px";
+      this.changeRight();
+      window.addEventListener('resize', this.changeRight());
     },
 
-    components: {
-      Menu
+    methods: {
+      changeRight() {
+        if (window.innerWidth > 1150) {
+          let menuItems = document.getElementsByClassName('menu__item');
+          let right = 0;
+
+          for (let i = 0; i < menuItems.length; i++) {
+            right += menuItems[i].offsetWidth;
+          }
+
+          this.right = right + 'px';
+        }
+      }
     }
   }
 </script>
