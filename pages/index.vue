@@ -314,7 +314,14 @@
   .main-footer__left, .main-footer__right {
     width: 100%;
     display: flex;
-    justify-content: center;
+  }
+
+  #main-footer a:first-child, #main-footer span:first-child {
+    text-align: right;
+  }
+
+  #main-footer a, #main-footer span {
+    width: 50%;
   }
 }
 
