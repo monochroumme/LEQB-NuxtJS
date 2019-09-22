@@ -55,9 +55,21 @@
 	};
 </script>
 
-<style scoped>
+<style>
 #cube {
 	display: flex;
 	justify-content: center;
+}
+
+#cube canvas {
+	width: 50% !important;
+    height: 50% !important;
+}
+
+@media (max-width: 1150px) {
+	#cube canvas {
+		min-width: 400px !important;
+		min-height: 400px !important;
+	}
 }
 </style>
